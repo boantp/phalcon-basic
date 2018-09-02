@@ -1,0 +1,13 @@
+curl -i -X POST -d '{"name":"C-1PO","type":"mechanical","year":1980}' http://phalcon.local/api/robots
+
+curl -i -X GET http://phalcon.local/api/robots
+
+curl -i -X GET http://phalcon.local/api/robots/search/C
+
+curl -i -X GET http://phalcon.local/api/robots/3
+
+curl -i -X POST -d '{"name":"C-3PO","type":"droid","year":1977}' http://phalcon.local/api/robots [failed]
+
+curl -i -X PUT -d '{"name":"ASIMO","type":"humanoid","year":2000}' http://phalcon.local/api/robots/4
+
+curl -i -X DELETE http://phalcon.local/api/robots/4
